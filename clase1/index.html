@@ -8,6 +8,14 @@
 
     <!-- CSS -->
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body, html {
+            margin: 0;
+        }
+
         section {
             border: 1px solid;
             height: 300px;
@@ -19,14 +27,21 @@
 
         nav {
             border: 1px solid blue;
+            position: fixed;
+            background-color: rgba(95, 158, 160, 0.39);
+            width: 100%;
+            top: 0;
         }
 
         nav ul {
+            display: flex;
+            gap: 10px;
+            justify-content: end;
             height: 30px;
+            padding: 0 10px;
         }
 
         nav ul li {
-            float: left;
             padding: 5px;
             list-style: none;
         }
@@ -36,12 +51,17 @@
             padding: 8px;
             border-radius: 5px;
             text-decoration: none;
+            font-weight: bold;
         }
 
         nav ul li a:hover {
             background-color: lightblue;
             text-decoration: underline;
             font-weight: bold;
+        }
+
+        #inicio {
+            margin-top: 80px;
         }
     </style>
 
@@ -65,8 +85,6 @@
     <section id="beneficio">Beneficios</section>
     <section id="como">Cómo funciona</section>
     <section id="feat">Features</section>
-
-
 </body>
 
 </html>
