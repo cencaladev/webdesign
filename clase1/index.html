@@ -63,6 +63,17 @@
         #inicio {
             margin-top: 80px;
         }
+        .grilla {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .card {
+            border: 1px solid #CCC;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #CCC;
+        }
     </style>
 
     <!-- JavaScript -->
@@ -82,7 +93,28 @@
     </nav>
     <section id="inicio">Inicio</section>
     <section id="problema">Problema/Solución</section>
-    <section id="beneficio">Beneficios</section>
+    <section id="beneficio">
+        <h2>Beneficios principales</h2>
+        <div class="grilla">
+            <div class="card">
+                <h3>⚡ Ahorra tiempo</h3>
+                <p>Automatiza tareas repetitivas en minutos.</p>
+            </div>
+            <div class="card">
+                <h3>📈 Incrementa conversiones</h3>
+                <p>Responde más rápido a tus clientes y mejora el seguimiento.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 IA integrada</h3>
+                <p>Genera respuestas, reportes y acciones automáticamente.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Seguro y confiable</h3>
+                <p>Tus datos protegidos con estándares empresariales.</p>
+            </div>
+
+        </div>
+    </section>
     <section id="como">Cómo funciona</section>
     <section id="feat">Features</section>
 </body>
